@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.mainBody{
+    display: flex;
+    justify-content: center;
+}
+
+.studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 40vw;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.568);
+}
+
+
+.studentTable th, .studentTable td, .studentTable tr{
+    padding: 0.5rem 1rem;
+    /* border: 1px solid black; */
+}
+
+.TableHeaders{
+    background-color: rgb(95, 223, 255);
+}
+
+.TableBody{
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+.TableBody:nth-of-type(odd){
+    background-color: rgb(220, 242, 248);
+}
+.TableBody:last-of-type{
+    border-bottom: 3px solid rgb(95, 223, 255);
+}
+
+.paginationCenter{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+
+.currentPagePagination{
+    background-color: rgb(179, 224, 243);
+}
+
