@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alumni Management System</title>
+    <link rel="stylesheet" href="{{asset('frontend/css/index.css')}}" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="{{asset('frontend/images/logo.png')}}" />
+        </div>
+        <h1>🎓 Goa University Alumni Management System</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="{{route('show_students')}}">Students</a></li>
+            <li><a href="{{route('show_alumni')}}">Alumni</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <title>Home</title>
-</head>
-<body>
-    <a href="/addInformation">Fill child database</a>
-    <a href="/showChildStudent">Show Child Students</a>
-</body>
+    <!-- Hero Section -->
+    <!-- Features -->
+    <section class="features">
+
+      <div class="container">
+        <a href="{{route('show_students')}}">
+            <div class="feature-card">
+                <h3>👨‍🎓 Student Management</h3>
+                <p>Add, update, and manage all student records with ease.</p>
+            </div>
+        </a>
+        <a href="{{route('show_alumni')}}">
+            <div class="feature-card">
+                <h3>🎉 Show Alumni</h3>
+                <p>Identify and track graduated students and their achievements.</p>
+            </div>
+         </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+          <p>&copy; 2025 College Alumni Management. All rights reserved.</p>
+        </div>
+      </footer>
+
+  </body>
 </html>

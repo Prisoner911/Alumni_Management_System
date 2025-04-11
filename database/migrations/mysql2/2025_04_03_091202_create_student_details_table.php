@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('ph_no');
             $table->string('email');
             $table->text('address');
+            $table->string('course');
             $table->string('school_10th_name');
             $table->text('school_10th_address');
             $table->decimal('school_10th_percentage', 5, 2);
